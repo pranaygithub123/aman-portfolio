@@ -49,7 +49,6 @@ export default function Experience() {
       className="bg-[#0a0a0a] min-h-screen flex items-center overflow-hidden relative py-20"
     >
       <div className="max-w-6xl w-full mx-auto px-10 grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-center relative z-10">
-
         {/* ── LEFT: Overlapping Image Collage ── */}
         <div
           className={`relative h-[480px] transition-all duration-[800ms] ease-out
@@ -104,17 +103,15 @@ export default function Experience() {
 
         {/* ── RIGHT: Content ── */}
         <div className="flex flex-col">
-
           {/* Heading */}
-          <h2
-            className={`text-5xl lg:text-6xl font-bold leading-none uppercase tracking-widest text-white mb-4
-              transition-all duration-700 delay-200
-              ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
-            style={{ fontFamily: "'Oswald', sans-serif" }}
-          >
-            Work
-            <span className="block text-red-600">Experience</span>
-          </h2>
+        <h2
+  className={`font-[family-name:var(--font-cinzel)] text-5xl lg:text-6xl font-bold leading-none uppercase tracking-widest text-white mb-4
+    transition-all duration-700 delay-200
+    ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+>
+  Work
+  <span className="block text-red-600">Experience</span>
+</h2>
 
           {/* Red divider */}
           <div
@@ -134,7 +131,7 @@ export default function Experience() {
 
           {/* Description */}
           <p
-            className={`text-sm text-white leading-relaxed uppercase tracking-wide mb-5
+            className={`text-sm text-white leading-relaxed font-[poppins] uppercase tracking-wide mb-5
               transition-all duration-700 delay-300
               ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
           >
@@ -161,7 +158,7 @@ export default function Experience() {
             {highlights.map((item, i) => (
               <li
                 key={i}
-                className="relative pl-[18px] py-[5px] text-[12px] text-white uppercase tracking-wide leading-relaxed border-b border-[#1a1a1a] last:border-b-0"
+                className="relative pl-[18px] py-[5px] text-[12px] font-[poppins] text-white uppercase tracking-wide leading-relaxed border-b border-[#1a1a1a] last:border-b-0"
               >
                 <span
                   className="absolute left-0 top-1/2 -translate-y-1/2 w-[6px] h-[6px] bg-red-600"
@@ -174,20 +171,19 @@ export default function Experience() {
 
           {/* Skills */}
           <div
-            className={`pt-4 border-t border-[#1e1e1e] flex flex-wrap gap-2
+            className={`pt-4 border-t border-[white] flex flex-wrap gap-2
               transition-all duration-700 delay-500
               ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
           >
             {skills.map((skill) => (
               <span
                 key={skill}
-                className="text-[10px] font-semibold tracking-[1px] uppercase text-white border border-white bg-[#110303] px-[10px] py-1"
+                className="text-[10px] font-[poppins] tracking-[1px] uppercase text-white border border-white bg-[#110303] px-[10px] py-1"
               >
                 {skill}
               </span>
             ))}
           </div>
-
         </div>
       </div>
     </section>

@@ -25,24 +25,23 @@ export default function Education() {
   return (
     <section className="relative min-h-screen flex items-center py-20 lg:py-10 lg:-mt-20">
       <div className="relative z-[2] w-full max-w-[1100px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-100 items-center px-6 lg:px-8">
-
         {/* ── LEFT — image + heading ── */}
         <div className="relative flex items-end justify-center">
           <div className="absolute bottom-8 lg:bottom-50 z-[100] leading-none">
+            {/* ABOUT — font-display, red, italic */}
             <span
-              className="block text-[#cc2222] font-bold italic"
+              className="font-[family-name:var(--font-cinzel)] block text-[#cc2222] font-semibold "
               style={{
-                fontFamily: "var(--font-cinzel), serif",
                 fontSize: "clamp(20px, 3vw, 38px)",
                 letterSpacing: "0.08em"
               }}
             >
               ABOUT
             </span>
+
             <span
-              className="block text-[#f5f2eb] ml-8 font-semibold"
+              className="font-[family-name:var(--font-cinzel)] block text-[#f5f2eb] ml-8 font-semibold"
               style={{
-                fontFamily: "var(--font-cinzel), serif",
                 fontSize: "clamp(36px, 6vw, 80px)",
                 letterSpacing: "0.1em",
                 lineHeight: 1

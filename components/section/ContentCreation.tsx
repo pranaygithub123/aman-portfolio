@@ -44,7 +44,7 @@ function Card({ src, alt, offset }: { src: any; alt: string; offset: number }) {
 
 export default function ContentCreation() {
   return (
-    <section className="relative w-full bg-[#0a0a0a] flex flex-col items-center justify-center py-16 px-4 ">
+    <section className="relative w-full bg-[#0a0a0a] flex flex-col items-center justify-center py-20 px-4 ">
       {/* ── Title ── */}
       <h2
         className="text-[clamp(28px,5vw,64px)] font-bold tracking-widest mb-16 text-center"

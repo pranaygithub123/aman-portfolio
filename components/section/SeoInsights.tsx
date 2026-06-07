@@ -30,7 +30,7 @@ function Card({ src, alt }: { src: any; alt: string }) {
 
 export default function SeoInsights() {
   return (
-    <section className="relative w-full bg-[#0a0a0a] flex flex-col items-center justify-center py-16 px-4">
+    <section className="relative w-full bg-[#0a0a0a] flex flex-col items-center justify-center py-24 px-4">
 
       {/* ── Title ── */}
       <h2

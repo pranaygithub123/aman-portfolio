@@ -8,23 +8,24 @@ export default function AboutUs() {
     <>
       {/* ── Section 1 — Hero role ── */}
       <section className="relative w-full min-h-screen bg-[#0a0a0a] flex flex-col items-center justify-center overflow-hidden px-4">
-        <h1 className="font-[family-name:var(--font-bebas)] text-[clamp(48px,14vw,160px)] text-[#f0ece4] leading-none tracking-wide text-center mb-8 lg:mb-12">
+        <h1 className="font-[poppins] text-[clamp(36px,10vw,160px)] font-semibold text-[#f0ece4] leading-none tracking-wide text-center mb-6 lg:mb-12">
           {PERSONAL_INFO.role}
         </h1>
-        <div className="flex flex-col items-center gap-1 max-w-xl text-center font-bold px-4">
-          <p className="font-[family-name:var(--font-cinzel)] text-sm tracking-[0.2em] text-white capitalize">
+        <div className="flex flex-col items-center gap-2 w-full max-w-xl text-center px-4">
+          <p className="font-[poppins] text-[clamp(10px,1.5vw,16px)] tracking-[0.2em] text-white capitalize">
             {PERSONAL_INFO.tagline}
           </p>
-          <p className="font-body text-sm tracking-[0.12em] text-white uppercase leading-relaxed">
+          <p className="font-body font-[poppins] text-[clamp(10px,1.2vw,14px)] tracking-[0.1em] text-white uppercase leading-relaxed">
             {PERSONAL_INFO.bio}
           </p>
         </div>
       </section>
 
       {/* ── Section 2 — About Me ── */}
-      <section className="relative w-full bg-[#0a0a0a] flex flex-col lg:flex-row items-center justify-center px-6 lg:px-16 xl:px-30 gap-10 lg:gap-20 xl:gap-100 py-20 lg:py-32">
+      <section className="relative w-full bg-[#0a0a0a] flex flex-col lg:flex-row items-center justify-center px-6 lg:px-16 xl:px-24 gap-8 lg:gap-6 xl:gap-14 py-12 lg:py-20">
+
         {/* Portrait */}
-        <div className="relative w-[220px] sm:w-[280px] lg:w-[380px] xl:w-[460px] shrink-0 aspect-[3/4] rounded-sm overflow-hidden">
+        <div className="relative w-[180px] sm:w-[240px] lg:w-[340px] xl:w-[400px] shrink-0 aspect-[3/4] rounded-sm overflow-hidden">
           <Image
             src={About}
             alt="About_Image"
@@ -34,13 +35,13 @@ export default function AboutUs() {
         </div>
 
         {/* Text */}
-        <div className="flex flex-col gap-6 items-center lg:items-start text-center lg:text-left w-full max-w-lg">
-          <h2 className="font-display text-[clamp(52px,10vw,120px)] leading-none">
+        <div className="flex flex-col gap-4 items-center lg:items-start text-center lg:text-left w-full max-w-2xl">
+          <h2 className="font-[family-name:var(--font-cinzel)] text-[clamp(40px,8vw,120px)] leading-none font-semibold">
             <span className="text-[#f0ece4]">ABOUT </span>
             <span className="text-[#CC0000]">ME</span>
           </h2>
 
-          <p className="font-semibold text-sm text-white leading-relaxed lg:w-[500px]">
+          <p className="text-[clamp(12px,1.4vw,18px)] text-white leading-7 tracking-wide w-full font-[poppins]">
             I am a results-driven performance marketer focused on creating
             profitable digital growth systems for brands. My expertise spans the
             full digital landscape — from Meta Ads (Facebook & Instagram) and
@@ -60,7 +61,7 @@ export default function AboutUs() {
 
           <div className="w-16 h-px bg-[#CC0000]" />
 
-          <p className="font-bold text-sm tracking-[0.15em] text-white">
+          <p className="font-bold text-[clamp(10px,1.2vw,14px)] tracking-[0.15em] text-white">
             {PERSONAL_INFO.email}
           </p>
         </div>
