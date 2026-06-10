@@ -23,12 +23,10 @@ const educationData = [
 
 export default function Education() {
   return (
-    <section className="relative min-h-screen flex items-center py-20 lg:py-10 lg:-mt-20 bg-[#0a0a0a]">
+    <section className="relative min-h-fit lg:min-h-screen flex items-center py-0 lg:py-10 lg:-mt-20 bg-[#0a0a0a]">
       <div className="relative z-[2] w-full max-w-[1100px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-100 items-center px-6 lg:px-8">
-        {/* ── LEFT — image + heading ── */}
-        <div className="relative flex items-end justify-center">
+        <div className="relative flex items-end justify-center -mt-16 lg:mt-0">
           <div className="absolute bottom-8 lg:bottom-50 z-[100] leading-none">
-            {/* ABOUT — font-display, red, italic */}
             <span
               className="font-[family-name:var(--font-cinzel)] block text-[#cc2222] font-semibold "
               style={{
@@ -53,20 +51,19 @@ export default function Education() {
 
           <div
             className="relative w-full overflow-hidden"
-            style={{ height: "clamp(280px, 50vw, 560px)" }}
+            style={{ height: "clamp(380px, 50vw, 560px)" }}
           >
             <Image
               src={EduImg}
               alt="Education photo"
               fill
-              className="object-cover scale-125 transition-transform duration-500 hover:scale-110"
+              className="object-cover object-top scale-125 transition-transform duration-500 hover:scale-110"
               priority
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent" />
           </div>
         </div>
 
-        {/* ── RIGHT — education cards ── */}
         <div className="flex flex-col gap-8 lg:gap-10">
           {educationData.map((item, i) => (
             <div

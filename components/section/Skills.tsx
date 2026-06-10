@@ -7,8 +7,9 @@ export default function Skills() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden py-20 lg:py-0 lg:mt-15 bg-[#0a0a0a]">
       <div className="relative z-[2] w-full max-w-[1420px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-46 items-center px-6">
+
         {/* ── LEFT — heading + text ── */}
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-8 order-last lg:order-first">
           <div className="flex flex-col items-center leading-none text-center gap-5 lg:ml-100">
             <span
               className="text-[#cc2222] mb-[-6px] font-[family-name:var(--font-cinzel)] font-semibold tracking-[0.14em]"
@@ -25,11 +26,11 @@ export default function Skills() {
               }}
             >
               SKILLS
-            </span>{" "}
+            </span>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-6">
-            <p className="text-white leading-relaxed text-base lg:text-lg font-[poppins] lg:w-[900px] lg:mr-[80px]">
+            <p className="text-white leading-relaxed text-base lg:text-lg font-[poppins] lg:w-[900px] lg:mr-[80px] text-justify">
               I am a results-driven performance marketer focused on creating
               profitable digital growth systems for brands. My expertise spans
               the full digital landscape — from Meta Ads (Facebook &amp;
@@ -40,12 +41,12 @@ export default function Skills() {
               Optimization, and Email &amp; WhatsApp Marketing.
             </p>
 
-            <p className="text-white text-base lg:text-lg leading-relaxed font-[poppins] lg:w-[900px]">
+            <p className="text-white text-base lg:text-lg leading-relaxed font-[poppins] lg:w-[900px] text-justify">
               But I don&apos;t just run ads. I go deeper — into customer
               psychology, CRM Integration, Email Marketing, and Lead Nurturing
               Strategy — because sustainable growth isn&apos;t just about clicks
               and impressions. It&apos;s about building systems that attract the
-              right people, nurture them thro?ugh the journey, and convert them
+              right people, nurture them through the journey, and convert them
               into loyal customers. Every campaign I build is rooted in data,
               driven by strategy, and designed to deliver measurable results
               that matter to your business.
@@ -54,7 +55,7 @@ export default function Skills() {
         </div>
 
         {/* ── RIGHT — circular portrait ── */}
-        <div className="flex items-center justify-center lg:ml-30">
+        <div className="flex items-center justify-center lg:ml-30 order-first lg:order-last">
           <div
             className="rounded-full overflow-hidden relative bg-[#1a0505]"
             style={{
@@ -71,6 +72,7 @@ export default function Skills() {
             />
           </div>
         </div>
+
       </div>
     </section>
   );

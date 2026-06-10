@@ -6,16 +6,16 @@ import About from "@/public/About_image.png";
 export default function AboutUs() {
   return (
     <>
-      {/* ── Section 1 — Hero role ── */}
-      <section className="relative w-full min-h-screen bg-[#0a0a0a] flex flex-col items-center justify-center overflow-hidden px-4">
-        <h1 className="font-[poppins] text-[clamp(36px,10vw,160px)] font-semibold text-[#f0ece4] leading-none tracking-wide text-center mb-6 lg:mb-12">
+      <section className="relative w-full min-h-fit sm:min-h-screen bg-[#0a0a0a] flex flex-col items-center justify-center overflow-hidden px-4 py-16 sm:py-0">
+        {" "}
+        <h1 className="font-[poppins] text-[clamp(36px,7vw,100px)] text-[#f0ece4] leading-none tracking-wide text-center mb-6 lg:mb-12">
           {PERSONAL_INFO.role}
         </h1>
         <div className="flex flex-col items-center gap-2 w-full max-w-xl text-center px-4">
-          <p className="font-[poppins] text-[clamp(10px,1.5vw,16px)] tracking-[0.2em] text-white capitalize">
+          <p className="font-[poppins] text-[clamp(10px,1.5vw,16px)] text-justify tracking-[0.2em] text-white capitalize">
             {PERSONAL_INFO.tagline}
           </p>
-          <p className="font-body font-[poppins] text-[clamp(10px,1.2vw,14px)] tracking-[0.1em] text-white uppercase leading-relaxed">
+          <p className="font-body font-[poppins] text-justify text-[clamp(10px,1.2vw,14px)] tracking-[0.1em] text-white uppercase leading-relaxed">
             {PERSONAL_INFO.bio}
           </p>
         </div>
@@ -23,7 +23,6 @@ export default function AboutUs() {
 
       {/* ── Section 2 — About Me ── */}
       <section className="relative w-full bg-[#0a0a0a] flex flex-col lg:flex-row items-center justify-center px-6 lg:px-16 xl:px-24 gap-8 lg:gap-6 xl:gap-14 py-12 lg:py-20">
-
         {/* Portrait */}
         <div className="relative w-[180px] sm:w-[240px] lg:w-[340px] xl:w-[400px] shrink-0 aspect-[3/4] rounded-sm overflow-hidden">
           <Image
@@ -41,7 +40,7 @@ export default function AboutUs() {
             <span className="text-[#CC0000]">ME</span>
           </h2>
 
-          <p className="text-[clamp(12px,1.4vw,18px)] text-white leading-7 tracking-wide w-full font-[poppins]">
+          <p className="text-white leading-relaxed text-base lg:text-lg font-[poppins] lg:w-[900px] lg:mr-[80px] text-justify">
             I am a results-driven performance marketer focused on creating
             profitable digital growth systems for brands. My expertise spans the
             full digital landscape — from Meta Ads (Facebook & Instagram) and

@@ -14,7 +14,7 @@ export default function RecentProjects() {
       </h2>
 
       {/* ── Subtitle ── */}
-      <p className="text-white font-[poppins] tracking-wide leading-7 text-center max-w-2xl mb-12">
+      <p className="text-white font-[poppins] text-center max-w-2xl mb-12 text-justify">
         A curated selection of recent campaigns, strategies, and digital
         marketing projects that delivered measurable results for clients across
         various industries.

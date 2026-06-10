@@ -104,14 +104,14 @@ export default function Experience() {
         {/* ── RIGHT: Content ── */}
         <div className="flex flex-col">
           {/* Heading */}
-        <h2
-  className={`font-[family-name:var(--font-cinzel)] text-5xl lg:text-6xl font-bold leading-none uppercase tracking-widest text-white mb-4
+          <h2
+            className={`font-[family-name:var(--font-cinzel)] text-[clamp(32px,6vw,64px)] font-bold leading-none uppercase tracking-widest text-white text-justify mb-4
     transition-all duration-700 delay-200
     ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
->
-  Work
-  <span className="block text-red-600">Experience</span>
-</h2>
+          >
+            Work
+            <span className="block text-red-600">Experience</span>
+          </h2>
 
           {/* Red divider */}
           <div
@@ -132,7 +132,7 @@ export default function Experience() {
           {/* Description */}
           <p
             className={`text-sm text-white leading-relaxed font-[poppins] uppercase tracking-wide mb-5
-              transition-all duration-700 delay-300
+              transition-all duration-700 delay-300 text-justify
               ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
           >
             Performance marketer with 3+ years of experience helping businesses
@@ -158,7 +158,7 @@ export default function Experience() {
             {highlights.map((item, i) => (
               <li
                 key={i}
-                className="relative pl-[18px] py-[5px] text-[12px] font-[poppins] text-white uppercase tracking-wide leading-relaxed border-b border-[#1a1a1a] last:border-b-0"
+                className="relative pl-[18px] py-[2px] sm:py-[5px] text-[11px] sm:text-[12px] font-[poppins] text-white text-justify uppercase border-b border-[#1a1a1a] last:border-b-0"
               >
                 <span
                   className="absolute left-0 top-1/2 -translate-y-1/2 w-[6px] h-[6px] bg-red-600"
