@@ -23,7 +23,7 @@ const educationData = [
 
 export default function Education() {
   return (
-    <section className="relative min-h-screen flex items-center py-20 lg:py-10 lg:-mt-20">
+    <section className="relative min-h-screen flex items-center py-20 lg:py-10 lg:-mt-20 bg-[#0a0a0a]">
       <div className="relative z-[2] w-full max-w-[1100px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-100 items-center px-6 lg:px-8">
         {/* ── LEFT — image + heading ── */}
         <div className="relative flex items-end justify-center">
