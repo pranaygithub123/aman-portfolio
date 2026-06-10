@@ -23,12 +23,14 @@ const educationData = [
 
 export default function Education() {
   return (
-    <section className="relative min-h-fit lg:min-h-screen flex items-center py-0 lg:py-10 lg:-mt-20 bg-[#0a0a0a]">
-      <div className="relative z-[2] w-full max-w-[1100px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-100 items-center px-6 lg:px-8">
-        <div className="relative flex items-end justify-center -mt-16 lg:mt-0">
-          <div className="absolute bottom-8 lg:bottom-50 z-[100] leading-none">
+    <section className="relative min-h-fit lg:min-h-screen flex items-center py-10 md:py-16 lg:py-10 lg:-mt-20 bg-[#0a0a0a]">
+      <div className="relative z-[2] w-full max-w-[1100px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 md:gap-10 lg:gap-100 items-center px-6 md:px-10 lg:px-8">
+
+        {/* ── LEFT — image + heading ── */}
+        <div className="relative flex items-end justify-center mt-0">
+          <div className="absolute bottom-6 md:bottom-10 lg:bottom-50 z-[100] leading-none">
             <span
-              className="font-[family-name:var(--font-cinzel)] block text-[#cc2222] font-semibold "
+              className="font-[family-name:var(--font-cinzel)] block text-[#cc2222] font-semibold"
               style={{
                 fontSize: "clamp(20px, 3vw, 38px)",
                 letterSpacing: "0.08em"
@@ -36,7 +38,6 @@ export default function Education() {
             >
               ABOUT
             </span>
-
             <span
               className="font-[family-name:var(--font-cinzel)] block text-[#f5f2eb] ml-8 font-semibold"
               style={{
@@ -51,7 +52,7 @@ export default function Education() {
 
           <div
             className="relative w-full overflow-hidden"
-            style={{ height: "clamp(380px, 50vw, 560px)" }}
+            style={{ height: "clamp(320px, 45vw, 560px)" }}
           >
             <Image
               src={EduImg}
@@ -64,7 +65,8 @@ export default function Education() {
           </div>
         </div>
 
-        <div className="flex flex-col gap-8 lg:gap-10">
+        {/* ── RIGHT — education cards ── */}
+        <div className="flex flex-col gap-6 md:gap-8 lg:gap-10">
           {educationData.map((item, i) => (
             <div
               key={i}
@@ -74,7 +76,7 @@ export default function Education() {
                 className="text-[#f5f2eb] font-semibold leading-snug"
                 style={{
                   fontFamily: "var(--font-cinzel), serif",
-                  fontSize: "clamp(11px, 1.2vw, 15px)",
+                  fontSize: "clamp(11px, 1.4vw, 15px)",
                   letterSpacing: "0.04em"
                 }}
               >
@@ -84,7 +86,7 @@ export default function Education() {
                 className="text-[#cc2222] font-semibold"
                 style={{
                   fontFamily: "var(--font-cinzel), serif",
-                  fontSize: "clamp(10px, 1vw, 13px)",
+                  fontSize: "clamp(10px, 1.2vw, 13px)",
                   letterSpacing: "0.06em"
                 }}
               >
@@ -94,7 +96,7 @@ export default function Education() {
                 className="text-white font-semibold"
                 style={{
                   fontFamily: "var(--font-cinzel), serif",
-                  fontSize: "clamp(9px, 0.9vw, 12px)",
+                  fontSize: "clamp(9px, 1vw, 12px)",
                   letterSpacing: "0.05em"
                 }}
               >
@@ -103,6 +105,7 @@ export default function Education() {
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );

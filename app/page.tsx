@@ -18,7 +18,7 @@ export default function Home() {
       <div className="sticky top-0 z-100 w-full h-16 sm:h-32 md:h-60 bg-black" />
       <Navbar />
       <Image src={AmanCoverImage} alt="CoverImage" className="w-full" />
-      <div className="flex flex-col w-full -space-y-4 md:-space-y-8 lg:-space-y-12">
+      <div className="flex flex-col w-full -space-y-2 md:-space-y-16 lg:-space-y-12">
         <AboutUs />
         <Skills />
         <Education />
