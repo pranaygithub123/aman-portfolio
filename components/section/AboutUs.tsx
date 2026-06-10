@@ -5,7 +5,7 @@ import About from "@/public/About_image.png";
 
 export default function AboutUs() {
   return (
-    <>
+    <div className="w-full bg-[#0a0a0a]">
       <section className="relative w-full min-h-fit sm:min-h-screen bg-[#0a0a0a] flex flex-col items-center justify-center overflow-hidden px-4 py-16 sm:py-0">
         {" "}
         <h1 className="font-[poppins] text-[clamp(36px,7vw,100px)] text-[#f0ece4] leading-none tracking-wide text-center mb-6 lg:mb-12">
@@ -65,6 +65,6 @@ export default function AboutUs() {
           </p>
         </div>
       </section>
-    </>
+    </div>
   );
 }

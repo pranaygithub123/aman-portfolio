@@ -5,7 +5,7 @@ import SkillsImg from "@/public/Skills.jpeg";
 
 export default function Skills() {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden py-20 lg:py-0 lg:mt-15 bg-[#0a0a0a]">
+    <section className="relative min-h-screen flex items-center overflow-hidden py-20 lg:py-0 bg-[#0a0a0a]">
       <div className="relative z-[2] w-full max-w-[1420px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-46 items-center px-6">
 
         {/* ── LEFT — heading + text ── */}
