@@ -19,7 +19,7 @@ const images = [
   { src: Web5, alt: "Website 5" },
   { src: Web6, alt: "Website 6" },
   { src: Web7, alt: "Website 7" },
-  { src: Web8, alt: "Website 8" },
+  { src: Web8, alt: "Website 8" }
 ];
 
 function Card({ src, alt }: { src: any; alt: string }) {
@@ -38,8 +38,7 @@ function Card({ src, alt }: { src: any; alt: string }) {
 
 export default function Website() {
   return (
-    <section className="relative w-full bg-[#0a0a0a] flex flex-col items-center justify-center py-10 sm:py-16 lg:py-24 px-4">
-
+    <section className="relative w-full bg-[#0a0a0a] flex flex-col items-center justify-center py-12 sm:py-16 md:py-20 lg:py-24 px-4">
       {/* ── Title ── */}
       <h2
         className="text-[clamp(28px,5vw,64px)] font-bold tracking-widest mb-10 sm:mb-16 text-center"
@@ -50,7 +49,6 @@ export default function Website() {
       </h2>
 
       <div className="w-full max-w-[1100px] flex flex-col gap-3 sm:gap-4">
-
         {/* ── Row 1: 1 col mobile → 3 col sm+ ── */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
           {images.slice(0, 3).map((img, i) => (
@@ -71,7 +69,6 @@ export default function Website() {
             <Card key={i} src={img.src} alt={img.alt} />
           ))}
         </div>
-
       </div>
     </section>
   );

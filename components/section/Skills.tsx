@@ -5,9 +5,9 @@ import SkillsImg from "@/public/Skills.jpeg";
 
 export default function Skills() {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden py-16 md:py-20 lg:py-0 bg-[#0a0a0a]">
+    <section className="relative w-full flex items-center overflow-hidden py-12 sm:py-16 md:py-20 lg:py-24 bg-[#0a0a0a]">
+      {" "}
       <div className="relative z-[2] w-full max-w-[1420px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-46 items-center px-6 md:px-10 lg:px-8">
-
         {/* ── LEFT — heading + text ── */}
         <div className="flex flex-col gap-6 md:gap-8 order-last md:order-first lg:order-first">
           <div className="flex flex-col items-center leading-none text-center gap-4 md:gap-5 lg:ml-100">
@@ -68,7 +68,6 @@ export default function Skills() {
             />
           </div>
         </div>
-
       </div>
     </section>
   );

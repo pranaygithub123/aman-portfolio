@@ -6,9 +6,9 @@ import About from "@/public/About_image.png";
 export default function AboutUs() {
   return (
     <div className="w-full bg-[#0a0a0a]">
-
       {/* ── Section 1 — Hero role ── */}
-      <section className="relative w-full min-h-fit sm:min-h-screen bg-[#0a0a0a] flex flex-col items-center justify-center overflow-hidden px-4 py-16 sm:py-0">
+      <section className="relative w-full bg-[#0a0a0a] flex flex-col items-center justify-center overflow-hidden px-4 py-16 sm:py-20 md:py-24 lg:py-32">
+        {" "}
         <h1 className="font-[poppins] text-[clamp(36px,7vw,100px)] text-[#f0ece4] leading-none tracking-wide text-center mb-6 lg:mb-12">
           {PERSONAL_INFO.role}
         </h1>
@@ -23,8 +23,8 @@ export default function AboutUs() {
       </section>
 
       {/* ── Section 2 — About Me ── */}
-      <section className="relative w-full bg-[#0a0a0a] flex flex-col md:flex-row lg:flex-row items-center justify-center px-6 md:px-10 lg:px-16 xl:px-24 gap-8 md:gap-8 lg:gap-6 xl:gap-14 py-12 md:py-16 lg:py-20">
-
+      <section className="relative w-full bg-[#0a0a0a] flex flex-col md:flex-row items-center justify-center px-6 md:px-10 lg:px-16 xl:px-24 gap-8 md:gap-8 lg:gap-6 xl:gap-14 py-12 sm:py-16 md:py-20 lg:py-24">
+        {" "}
         {/* Portrait */}
         <div className="relative w-[180px] sm:w-[240px] md:w-[280px] lg:w-[340px] xl:w-[400px] shrink-0 aspect-[3/4] rounded-sm overflow-hidden">
           <Image
@@ -34,7 +34,6 @@ export default function AboutUs() {
             className="object-cover object-top grayscale"
           />
         </div>
-
         {/* Text */}
         <div className="flex flex-col gap-4 items-center md:items-start lg:items-start text-center md:text-left lg:text-left w-full max-w-2xl">
           <h2 className="font-[family-name:var(--font-cinzel)] text-[clamp(40px,6vw,120px)] leading-none font-semibold">

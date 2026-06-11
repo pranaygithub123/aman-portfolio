@@ -23,7 +23,7 @@ const rows = [
 ];
 
 const OFFSET = 40;
-const GAP = 20; 
+const GAP = 20;
 
 function Card({ src, alt, offset }: { src: any; alt: string; offset: number }) {
   return (
@@ -44,7 +44,7 @@ function Card({ src, alt, offset }: { src: any; alt: string; offset: number }) {
 
 export default function ContentCreation() {
   return (
-    <section className="relative w-full bg-[#0a0a0a] flex flex-col items-center justify-center py-20 px-4 ">
+    <section className="relative w-full bg-[#0a0a0a] flex flex-col items-center justify-center py-12 sm:py-16 md:py-20 lg:py-24 px-4">
       {/* ── Title ── */}
       <h2
         className="text-[clamp(28px,5vw,64px)] font-bold tracking-widest mb-16 text-center"
