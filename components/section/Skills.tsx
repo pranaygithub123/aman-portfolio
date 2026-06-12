@@ -1,74 +1,74 @@
-"use client";
+// "use client";
 
-import Image from "next/image";
-import SkillsImg from "@/public/Skills.jpeg";
+// import Image from "next/image";
+// import SkillsImg from "@/public/Skills.jpeg";
 
-export default function Skills() {
-  return (
-    <section className="relative w-full flex items-center overflow-hidden py-12 sm:py-16 md:py-20 lg:py-24 bg-[#0a0a0a]">
-      {" "}
-      <div className="relative z-[2] w-full max-w-[1420px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-46 items-center px-6 md:px-10 lg:px-8">
-        {/* ── LEFT — heading + text ── */}
-        <div className="flex flex-col gap-6 md:gap-8 order-last md:order-first lg:order-first">
-          <div className="flex flex-col items-center leading-none text-center gap-4 md:gap-5 lg:ml-100">
-            <span
-              className="text-[#cc2222] mb-[-6px] font-[family-name:var(--font-cinzel)] font-semibold tracking-[0.14em]"
-              style={{ fontSize: "clamp(40px, 5vw, 90px)" }}
-            >
-              personal
-            </span>
-            <span
-              className="font-[family-name:var(--font-cinzel)] text-[#f5f2eb] font-semibold tracking-[0.14em]"
-              style={{ fontSize: "clamp(40px, 5vw, 90px)" }}
-            >
-              SKILLS
-            </span>
-          </div>
+// export default function Skills() {
+//   return (
+//     <section className="relative w-full flex items-center overflow-hidden py-12 sm:py-16 md:py-20 lg:py-24 bg-[#0a0a0a]">
+//       {" "}
+//       <div className="relative z-[2] w-full max-w-[1420px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-46 items-center px-6 md:px-10 lg:px-8">
+//         {/* ── LEFT — heading + text ── */}
+//         <div className="flex flex-col gap-6 md:gap-8 order-last md:order-first lg:order-first">
+//           <div className="flex flex-col items-center leading-none text-center gap-4 md:gap-5 lg:ml-100">
+//             <span
+//               className="text-[#cc2222] mb-[-6px] font-[family-name:var(--font-cinzel)] font-semibold tracking-[0.14em]"
+//               style={{ fontSize: "clamp(40px, 5vw, 90px)" }}
+//             >
+//               personal
+//             </span>
+//             <span
+//               className="font-[family-name:var(--font-cinzel)] text-[#f5f2eb] font-semibold tracking-[0.14em]"
+//               style={{ fontSize: "clamp(40px, 5vw, 90px)" }}
+//             >
+//               SKILLS
+//             </span>
+//           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-4 md:gap-6">
-            <p className="text-white leading-relaxed text-sm md:text-base lg:text-lg font-[poppins] w-full lg:w-[900px] lg:mr-[80px] text-justify">
-              I am a results-driven performance marketer focused on creating
-              profitable digital growth systems for brands. My expertise spans
-              the full digital landscape — from Meta Ads (Facebook &amp;
-              Instagram) and Google Ads to SEO (Local &amp; International), Lead
-              Generation, and E-commerce Conversion Campaigns. I also specialize
-              in Funnel Strategy, Landing Page Optimization, Social Media
-              Growth, WordPress Website Development, Google My Business
-              Optimization, and Email &amp; WhatsApp Marketing.
-            </p>
+//           <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-4 md:gap-6">
+//             <p className="text-white leading-relaxed text-sm md:text-base lg:text-lg font-[poppins] w-full lg:w-[900px] lg:mr-[80px] text-justify">
+//               I am a results-driven performance marketer focused on creating
+//               profitable digital growth systems for brands. My expertise spans
+//               the full digital landscape — from Meta Ads (Facebook &amp;
+//               Instagram) and Google Ads to SEO (Local &amp; International), Lead
+//               Generation, and E-commerce Conversion Campaigns. I also specialize
+//               in Funnel Strategy, Landing Page Optimization, Social Media
+//               Growth, WordPress Website Development, Google My Business
+//               Optimization, and Email &amp; WhatsApp Marketing.
+//             </p>
 
-            <p className="text-white text-sm md:text-base lg:text-lg leading-relaxed font-[poppins] w-full lg:w-[900px] text-justify">
-              But I don&apos;t just run ads. I go deeper — into customer
-              psychology, CRM Integration, Email Marketing, and Lead Nurturing
-              Strategy — because sustainable growth isn&apos;t just about clicks
-              and impressions. It&apos;s about building systems that attract the
-              right people, nurture them through the journey, and convert them
-              into loyal customers. Every campaign I build is rooted in data,
-              driven by strategy, and designed to deliver measurable results
-              that matter to your business.
-            </p>
-          </div>
-        </div>
+//             <p className="text-white text-sm md:text-base lg:text-lg leading-relaxed font-[poppins] w-full lg:w-[900px] text-justify">
+//               But I don&apos;t just run ads. I go deeper — into customer
+//               psychology, CRM Integration, Email Marketing, and Lead Nurturing
+//               Strategy — because sustainable growth isn&apos;t just about clicks
+//               and impressions. It&apos;s about building systems that attract the
+//               right people, nurture them through the journey, and convert them
+//               into loyal customers. Every campaign I build is rooted in data,
+//               driven by strategy, and designed to deliver measurable results
+//               that matter to your business.
+//             </p>
+//           </div>
+//         </div>
 
-        {/* ── RIGHT — circular portrait ── */}
-        <div className="flex items-center justify-center lg:ml-30 order-first md:order-last lg:order-last">
-          <div
-            className="rounded-full overflow-hidden relative bg-[#1a0505]"
-            style={{
-              width: "clamp(180px, 28vw, 360px)",
-              height: "clamp(180px, 28vw, 360px)"
-            }}
-          >
-            <Image
-              src={SkillsImg}
-              alt="Profile photo"
-              fill
-              className="object-cover object-top"
-              priority
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
+//         {/* ── RIGHT — circular portrait ── */}
+//         <div className="flex items-center justify-center lg:ml-30 order-first md:order-last lg:order-last">
+//           <div
+//             className="rounded-full overflow-hidden relative bg-[#1a0505]"
+//             style={{
+//               width: "clamp(180px, 28vw, 360px)",
+//               height: "clamp(180px, 28vw, 360px)"
+//             }}
+//           >
+//             <Image
+//               src={SkillsImg}
+//               alt="Profile photo"
+//               fill
+//               className="object-cover object-top"
+//               priority
+//             />
+//           </div>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }

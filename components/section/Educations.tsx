@@ -76,7 +76,7 @@ export default function Education() {
               className="object-cover object-top scale-125 transition-transform duration-500 hover:scale-110"
               priority
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent" />
+            {/* <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent" /> */}
           </div>
         </div>
 

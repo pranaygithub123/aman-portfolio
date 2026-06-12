@@ -15,9 +15,9 @@ export default function RecentProjects() {
 
       {/* ── Subtitle ── */}
       <p className="text-white font-[poppins] text-center max-w-2xl mb-12 text-justify">
-        A curated selection of recent campaigns, strategies, and digital
-        marketing projects that delivered measurable results for clients across
-        various industries.
+        Executed data-driven Google Ads and Meta Ads campaigns across global
+        markets, helping businesses generate quality leads, improve conversions,
+        and achieve sustainable growth.
       </p>
 
       {/* ── Images stacked vertically ── */}
@@ -37,10 +37,10 @@ export default function RecentProjects() {
           </div>
           <div className="flex flex-col gap-1 border-l-2 border-[#CC0000] pl-4">
             <span className="font-[poppins] text-white font-semibold text-sm tracking-wide">
-              Project Title One
+              Project Title: Google Ads Campaign
             </span>
             <span className="text-white font-bold text-sm tracking-wide">
-              Google Ads
+              USA MARKET
             </span>
           </div>
         </div>
@@ -60,10 +60,10 @@ export default function RecentProjects() {
           </div>
           <div className="flex flex-col gap-1 border-l-2 border-[#CC0000] pl-4">
             <span className="font-[poppins] text-white font-semibold text-sm tracking-wide">
-              Project Title Two
+              Project Title: Meta Ads Campaign
             </span>
             <span className="text-white font-bold text-sm tracking-wide">
-              Meta Ads · Lead Generation
+               INDIA & UAE Markets
             </span>
           </div>
         </div>

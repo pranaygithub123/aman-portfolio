@@ -2,7 +2,7 @@ import Image from "next/image";
 import Navbar from "@/components/layout/Navbar";
 import AboutUs from "@/components/section/AboutUs";
 import AmanCoverImage from "@/public/AmanCover.jpeg";
-import Skills from "@/components/section/Skills";
+// import Skills from "@/components/section/Skills";
 import Education from "@/components/section/Educations";
 import Experience from "@/components/section/Experience";
 import RecentProject from "@/components/section/RecentProject";
@@ -20,7 +20,7 @@ export default function Home() {
       <Image src={AmanCoverImage} alt="CoverImage" className="w-full" />
       <div className="flex flex-col w-full gap-0">
         <AboutUs />
-        <Skills />
+        {/* <Skills /> */}
         <Education />
         <Experience />
         <RecentProject />

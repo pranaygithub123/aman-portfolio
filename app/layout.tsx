@@ -21,8 +21,8 @@ const greatVibes = Great_Vibes({
 });
 
 export const metadata: Metadata = {
-  title: "Aman_Portfolio",
-  description: "Aman-Portfolio",
+  title: "Abhsihek_Portfolio",
+  description: "Abhishek-Portfolio",
 };
 
 export default function RootLayout({
