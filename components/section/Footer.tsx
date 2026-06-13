@@ -7,7 +7,7 @@ import { Mail, Phone, MapPin } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="relative w-full bg-[#0a0a0a] overflow-hidden px-4 sm:px-8 md:px-12 lg:px-16 pt-10 sm:pt-12 md:pt-14 lg:pt-16 pb-0">
+    <footer className="relative w-full bg-black overflow-hidden px-4 sm:px-8 md:px-12 lg:px-16 pt-10 sm:pt-12 md:pt-14 lg:pt-16 pb-0">
       <div className="absolute top-0 left-0 right-0 h-[2px] bg-[#CC0000]" />
 
       <div className="relative z-10 max-w-[1100px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 items-start">
@@ -107,7 +107,7 @@ export default function Footer() {
               className="absolute inset-0 z-0 scale-125"
               style={{
                 background:
-                  "radial-gradient(ellipse at 60% 40%, #CC0000 0%, transparent 65%)",
+                  "radial-gradient(ellipse at 60% 40%, #0a0a0a 0%, transparent 65%)",
                 filter: "blur(18px)",
                 opacity: 0.55
               }}
