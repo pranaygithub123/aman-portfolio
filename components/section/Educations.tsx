@@ -12,12 +12,12 @@ const educationData = [
   {
     degree: "XII (ISC) – Senior Secondary Education",
     school: "Assisi Convent School",
-    detail: "87% | 2022"
+    detail: "87% | 2023"
   },
   {
     degree: "X (ICSE) – Secondary Education",
     school: "Assisi Convent School",
-    detail: "79% | 2020"
+    detail: "79% | 2021"
   }
 ];
 
